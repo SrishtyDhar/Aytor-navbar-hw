@@ -1,0 +1,136 @@
+/* common css */
+:root {
+   --primaryFont: "Josefin Sans", sans-serif;
+   --secondFont: "Roboto", sans-serif;
+	--text-color: #11161e;
+	--darkBlue: #151a32;
+	--comon-colot: #fff;
+	--primaryColor: #ff6f61;
+	--paragraph-color: #444;
+	--primary-color-dark: #ff5645;
+	--background-color: #f1f1f1;
+	--bg: #f1f3f4;
+	--black: #000;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul,li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+h1,h2,h3,h4,h5,h6,p,span,ol,ul{
+margin: 0;
+padding: 0;
+}
+body{
+    font-family: var(--primaryFont);
+}
+/* common css end */
+
+/* navbar starts */
+
+#navbarMenu ul li a {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 162%;
+    color: var(--text-color);
+    padding: 37px 15px ;
+    display: block;
+}
+#navbarMenu ul li a span:hover > i{
+    transform: rotate(180deg);
+}
+#navbarMenu ul li:hover > a{
+    color: var(--primaryColor);
+}
+#navbarMenu ul li{
+    position: relative;
+}
+#navbarMenu ul li .submenu{
+    position: absolute;
+    background-color: white;
+    border: 1px solid rgb(212, 203, 203);
+    width: 250px;
+    margin-top: 60px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+}
+#navbarMenu ul li .submenu li a{
+    padding: 15px 20px;
+    border-bottom: 1px solid grey;
+
+}
+#navbarMenu ul li:hover > .submenu{
+    margin-top: 0;
+    opacity: 1;
+    visibility: visible;
+}
+header nav .links li a{
+color: var(--darkBlue);
+margin-left: 20px;
+font-size: 19px;
+position: relative;
+}
+.cartCounter{
+    position: absolute;
+    top: -3px;
+    right: -8px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    display: block;
+    color: var(--comon-colot);
+    font-size: 14px;
+    text-align: center;
+    line-height: 17px;
+    background-color: var(--primaryColor);
+}
+/* small navbar */
+.smNavbar{
+    padding: 15px 0;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; ;
+}
+.smNavbar .menuBtnToggoler{
+    border: none;
+    background-color: transparent;
+    outline: none;
+    font-size: 18px;
+}
+header .smallMenuLink li:hover > a{
+    color: var(--primaryColor);
+}
+header .smallMenuLink li a{
+    border-bottom: 1px solid #ccc;
+    display: block;
+    font-size: 14px;
+    color: var(--text-color);
+    padding: 15px 20px;
+}
+header .smallMenuLink li:last-child a{
+    border: none;
+}
+header .submenuSmall{
+    position: relative !important;
+    inset: auto !important;
+    transform:translate3d(0px, 0px ,0px) !important;
+    width: 100% ;
+    border-radius: 0;
+    border: 0;
+    padding-left: 20px;
+}
+.smallMenuLink .dropdownArrow{
+    padding-left: 5px;
+}
+.smallMenuLink span:hover > i{
+    transform: rotate(180deg);
+}
+/* small navbar */
+ 
+/* navbar ends */
